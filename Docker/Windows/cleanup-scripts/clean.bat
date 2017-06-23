@@ -1,1 +1,0 @@
-powershell -command Y:\commands\clean.ps1

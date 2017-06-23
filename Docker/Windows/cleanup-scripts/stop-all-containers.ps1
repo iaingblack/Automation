@@ -1,1 +1,0 @@
-docker ps -a -q | %{docker stop $_}

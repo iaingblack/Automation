@@ -1,1 +1,0 @@
-docker ps -a -q | %{docker rm -f $_}
