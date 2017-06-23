@@ -5,7 +5,7 @@
 
 # Install chefdk and bits and bobs, then install docker-machine
 echo CHEFDK
-sudo yum install -y https://packages.chef.io/files/stable/chefdk/1.4.3/el/7/chefdk-1.4.3-1.el6.x86_64.rpm
+sudo yum install -y https://packages.chef.io/files/stable/chefdk/1.4.3/el/7/chefdk-1.4.3-1.el7.x86_64.rpm
 echo 'eval "$(chef shell-init bash)"' >> ~/.bash_profile
 source ~/.bash_profile
 sudo yum groupinstall "Development Tools" nano -y 
