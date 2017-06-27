@@ -6,13 +6,14 @@ chef gem install kitchen-all
 vagrant box add mwrock/Windows2016
 vagrant box add mwrock/Windows2012R2
 vagrant box add jacqinthebox/windowsserver2016core
-"C:\Program Files (x86)\Microsoft VS Code\code.exe" --install-extension ms-vscode.powershell
-"C:\Program Files (x86)\Microsoft VS Code\code.exe" --install-extension msazurermtools.azurerm-vscode-tools
-"C:\Program Files (x86)\Microsoft VS Code\code.exe" --install-extension HookyQR.beautify
-"C:\Program Files (x86)\Microsoft VS Code\code.exe" --install-extension Pendrica.chef
-"C:\Program Files (x86)\Microsoft VS Code\code.exe" --install-extension ms-vscode.PeterJausovec.vscode-docker
-"C:\Program Files (x86)\Microsoft VS Code\code.exe" --install-extension alefragnani.project-manager
-"C:\Program Files (x86)\Microsoft VS Code\code.exe" --install-extension Borke.puppet
-"C:\Program Files (x86)\Microsoft VS Code\code.exe" --install-extension mauve.terraform
-"C:\Program Files (x86)\Microsoft VS Code\code.exe" --install-extension bbenoist.vagrant
-"C:\Program Files (x86)\Microsoft VS Code\code.exe" --list-extensions
+code --install-extension ms-vscode.powershell
+code --install-extension ms-vscode.powershell
+code --install-extension msazurermtools.azurerm-vscode-tools
+code --install-extension HookyQR.beautify
+code --install-extension Pendrica.chef
+code --install-extension ms-vscode.PeterJausovec.vscode-docker
+code --install-extension alefragnani.project-manager
+code --install-extension Borke.puppet
+code --install-extension mauve.terraform
+code --install-extension bbenoist.vagrant
+code --list-extensions
