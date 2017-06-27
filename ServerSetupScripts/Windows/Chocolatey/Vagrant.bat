@@ -16,3 +16,6 @@ code --install-extension Borke.puppet
 code --install-extension mauve.terraform
 code --install-extension bbenoist.vagrant
 code --list-extensions
+mkdir c:\github
+cd c:\github
+git clone https://github.com/iaingblack/Automation.git
