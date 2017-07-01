@@ -3,9 +3,9 @@ choco install vagrant chefdk virtualbox visualstudiocode 7zip googlechrome notep
 refreshenv
 vagrant plugin install vagrant-winrm
 chef gem install kitchen-all
-vagrant box add mwrock/Windows2016
-vagrant box add mwrock/Windows2012R2
-vagrant box add jacqinthebox/windowsserver2016core
+vagrant box add mwrock/Windows2016 vagrant box add mwrock/Windows2016 --provider virtualbox
+vagrant box add mwrock/Windows2012R2 --provider virtualbox
+vagrant box add jacqinthebox/windowsserver2016core  --provider virtualbox
 code --install-extension ms-vscode.powershell
 code --install-extension msazurermtools.azurerm-vscode-tools
 code --install-extension HookyQR.beautify
