@@ -2,7 +2,6 @@
 choco install vagrant chefdk virtualbox visualstudiocode 7zip googlechrome notepadplusplus.install firefox git.install tortoisegit -y
 refreshenv
 vagrant plugin install vagrant-winrm
-chef gem install kitchen-all
 vagrant box add mwrock/Windows2016 --provider virtualbox
 vagrant box add mwrock/Windows2012R2 --provider virtualbox
 vagrant box add jacqinthebox/windowsserver2016core --provider virtualbox
@@ -19,3 +18,4 @@ code --list-extensions
 mkdir c:\github
 cd c:\github
 git clone https://github.com/iaingblack/Automation.git
+chef gem install kitchen-all
