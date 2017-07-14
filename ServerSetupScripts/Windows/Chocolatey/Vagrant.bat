@@ -13,6 +13,7 @@ code --install-extension Borke.puppet
 code --install-extension mauve.terraform
 code --install-extension Pendrica.chef
 code --install-extension bbenoist.vagrant
+code --install-extension burtlo.inspec
 code --list-extensions
 mkdir c:\github
 cd c:\github
