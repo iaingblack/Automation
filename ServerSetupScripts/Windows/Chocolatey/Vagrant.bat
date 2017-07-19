@@ -1,9 +1,3 @@
-Function downloadFile($source, $dest) {
-    $WebClient = New-Object System.Net.WebClient
-    Write-Host "Downloading File from $source to $dest"
-    $WebClient.DownloadFile($source,$dest)
-}
-
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 choco install googlechrome 7zip notepadplusplus.install firefox git.install putty winscp.install azurestorageexplorer tortoisegit vagrant chefdk puppet-agent packer terraform virtualbox visualstudiocode vmwareworkstation -y
 refreshenv
