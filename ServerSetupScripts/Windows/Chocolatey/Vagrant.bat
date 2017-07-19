@@ -4,7 +4,6 @@ Function downloadFile($source, $dest) {
     $WebClient.DownloadFile($source,$dest)
 }
 
-https://github.com/Azure/azure-powershell/releases/download/v4.2.1-July2017/azure-powershell.4.2.1.msi
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 choco install googlechrome 7zip notepadplusplus.install firefox git.install putty winscp.install azurestorageexplorer tortoisegit vagrant chefdk puppet-agent packer terraform virtualbox visualstudiocode vmwareworkstation -y
 refreshenv
