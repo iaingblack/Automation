@@ -2,6 +2,7 @@
 choco install googlechrome 7zip notepadplusplus.install firefox git.install putty winscp.install azurestorageexplorer tortoisegit vagrant chefdk puppet-agent packer terraform virtualbox visualstudiocode vmwareworkstation -y
 refreshenv
 vagrant plugin install vagrant-winrm
+vagrant plugin install vagrant-omnibus
 vagrant box add mwrock/Windows2016 --provider virtualbox
 code --install-extension ms-vscode.powershell
 code --install-extension msazurermtools.azurerm-vscode-tools
