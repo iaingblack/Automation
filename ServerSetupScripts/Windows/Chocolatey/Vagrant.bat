@@ -33,7 +33,7 @@ chef gem install chef-zero-scheduled-task
 chef gem install kitchen-all
 
 #Add if required
-vagrant box add mwrock/Windows2012R2 --provider virtualbox
+vagrant box add devopsgroup-io/windows_server-2012r2-standard-amd64-nocm --provider virtualbox
 vagrant box add jacqinthebox/windowsserver2016core --provider virtualbox
 
 # For Vagrant Boxes Run Something Like This
