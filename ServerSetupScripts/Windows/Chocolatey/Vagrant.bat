@@ -34,3 +34,11 @@ chef gem install kitchen-all
 #Add if required
 vagrant box add mwrock/Windows2012R2 --provider virtualbox
 vagrant box add jacqinthebox/windowsserver2016core --provider virtualbox
+
+# For Vagrant Boxes Run Something Like This
+#mkdir c:\packer
+#cd c:\packer
+#git clone https://github.com/mwrock/packer-templates.git
+#cd packer-templates
+#To run a build, run this command
+#packer build -force-only virtalbox-iso .\vbox-2012r2.json
