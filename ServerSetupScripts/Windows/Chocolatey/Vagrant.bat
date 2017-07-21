@@ -16,6 +16,7 @@ code --install-extension mauve.terraform
 code --install-extension Pendrica.chef
 code --install-extension bbenoist.vagrant
 code --install-extension burtlo.inspec
+code --install-extension ms-mssql.mssql
 code --list-extensions
 
 #Install Azure Powershell Cmdlets
