@@ -29,6 +29,7 @@ cd c:\github
 git clone https://github.com/iaingblack/Automation.git
 
 #This breaks the above commands by changing shell (I think) so do it last
+chef gem install chef-zero-scheduled-task
 chef gem install kitchen-all
 
 #Add if required
