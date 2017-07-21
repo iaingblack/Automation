@@ -4,7 +4,11 @@ refreshenv
 vagrant plugin install vagrant-winrm
 vagrant plugin install vagrant-omnibus
 vagrant plugin install vagrant-berkshelf
+
+# Look at a command to change the location of boxes if a seperate disk exists. Provisioning takes ages.
+# VAGRANT_HOME https://www.vagrantup.com/docs/other/environmental-variables.html
 vagrant box add mwrock/Windows2016 --provider virtualbox
+
 code --install-extension ms-vscode.powershell
 code --install-extension msazurermtools.azurerm-vscode-tools
 code --install-extension HookyQR.beautify
