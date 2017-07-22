@@ -1,3 +1,8 @@
+#IF WE HAVE A SECOND DISK FOR VAGRANT BOXES USE IT
+mkdir z:\vagrant
+setx VAGRANT_HOME "z:/vagrant" /M
+set VAGRANT_HOME=z:/vagrant
+
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 choco install googlechrome 7zip notepadplusplus.install firefox git.install putty winscp.install azurestorageexplorer tortoisegit vagrant chefdk puppet-agent packer terraform virtualbox visualstudiocode vmwareworkstation -y
 refreshenv
