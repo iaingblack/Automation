@@ -1,10 +1,10 @@
 #IF WE HAVE A SECOND DISK FOR VAGRANT BOXES USE IT
-mkdir z:\vagrant
-setx VAGRANT_HOME "z:/vagrant" /M
-set VAGRANT_HOME=z:/vagrant
+#mkdir z:\vagrant
+#setx VAGRANT_HOME "z:/vagrant" /M
+#set VAGRANT_HOME=z:/vagrant
 
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-choco install googlechrome 7zip notepadplusplus.install firefox git.install putty winscp.install azurestorageexplorer tortoisegit vagrant chefdk puppet-agent packer terraform virtualbox visualstudiocode vmwareworkstation -y
+choco install googlechrome 7zip notepadplusplus.install git.install putty winscp.install azurestorageexplorer tortoisegit vagrant chefdk puppet-agent packer terraform virtualbox visualstudiocode -y
 refreshenv
 vagrant plugin install vagrant-winrm
 vagrant plugin install vagrant-omnibus
@@ -12,7 +12,7 @@ vagrant plugin install vagrant-berkshelf
 
 # Look at a command to change the location of boxes if a seperate disk exists. Provisioning takes ages.
 # VAGRANT_HOME https://www.vagrantup.com/docs/other/environmental-variables.html
-vagrant box add mwrock/Windows2016 --provider virtualbox
+vagrant box add mwrock/Windows2012R2Full --provider virtualbox
 
 code --install-extension ms-vscode.powershell
 code --install-extension msazurermtools.azurerm-vscode-tools
@@ -44,7 +44,7 @@ chef gem install kitchen-all
 #Add if required
 vagrant box add devopsgroup-io/windows_server-2012r2-standard-amd64-nocm --provider virtualbox
 vagrant box add jacqinthebox/windowsserver2016core --provider virtualbox
-vagrant box add mwrock/Windows2012R2Full
+vagrant box add mwrock/Windows2016 --provider virtualbox
 
 # For Vagrant Boxes Run Something Like This
 #mkdir c:\packer
